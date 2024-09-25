@@ -1,0 +1,24 @@
+FRAME_CLASS     18
+ATC_ACCEL_P_MAX 120000  # Erhöht aufgrund der zusätzlichen Motoren
+ATC_ACCEL_R_MAX 120000  # Erhöht aufgrund der zusätzlichen Motoren
+ATC_ACCEL_Y_MAX 20000   # Erhöht aufgrund der zusätzlichen Motoren
+ATC_ANG_PIT_P   12      # Erhöht aufgrund der zusätzlichen Motoren
+ATC_ANG_RLL_P   12      # Erhöht aufgrund der zusätzlichen Motoren
+ATC_ANG_YAW_P   7.5     # Erhöht aufgrund der zusätzlichen Motoren
+ATC_RAT_PIT_D   0.0025  # Feinjustierung notwendig
+ATC_RAT_PIT_I   0.14    # Feinjustierung notwendig
+ATC_RAT_PIT_IMAX    0.75
+ATC_RAT_PIT_P   0.14    # Feinjustierung notwendig
+ATC_RAT_RLL_D   0.0025  # Feinjustierung notwendig
+ATC_RAT_RLL_I   0.14    # Feinjustierung notwendig
+ATC_RAT_RLL_IMAX    1
+ATC_RAT_RLL_P   0.14    # Feinjustierung notwendig
+ATC_RAT_YAW_P   0.05    # Feinjustierung notwendig
+ATC_RAT_YAW_I   0.005   # Feinjustierung notwendig
+ATC_RATE_FF_ENAB    1
+ATC_RATE_P_MAX  0
+ATC_RATE_R_MAX  0
+ATC_RATE_Y_MAX  0
+MOT_THST_EXPO   0
+MOT_THST_HOVER  0.5     # Muss möglicherweise durch Testen angepasst werden
+MOT_YAW_HEADROOM    300
