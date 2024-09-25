@@ -111,13 +111,10 @@ class VehicleInfo(object):
                     "default_params/copter-deca-cwx.parm"
                  ],
             },
-            "pentacoax": {
+            "deca-penta": {
                 "waf_target": "bin/arducopter",
-                "default_params_filename": [
-                    "default_params/copter.parm",
-                    "default_params/copter-deca.parm",
-                    "default_params/copter-deca-pentacoax.parm"
-                ],
+                "default_params_filename": ["default_params/copter.parm",
+                                            "default_params/copter-decapenta.parm" ],
             },
             "tri": {
                 "waf_target": "bin/arducopter",
