@@ -233,6 +233,20 @@ static Motor deca_cw_x_motors[] =
     Motor(AP_MOTORS_MOT_10,  -18, AP_MOTORS_MATRIX_YAW_FACTOR_CW,  10)
 };
 
+static Motor deca_penta_motors[] =
+{
+    Motor(AP_MOTORS_MOT_1,    0, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   1),
+    Motor(AP_MOTORS_MOT_2,   72, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   2),
+    Motor(AP_MOTORS_MOT_3,   72, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  3),
+    Motor(AP_MOTORS_MOT_4,  144, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  4),
+    Motor(AP_MOTORS_MOT_5,  144, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   5),
+    Motor(AP_MOTORS_MOT_6, -144, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   6),
+    Motor(AP_MOTORS_MOT_7, -144, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  7),
+    Motor(AP_MOTORS_MOT_8,  -72, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,  8),
+    Motor(AP_MOTORS_MOT_9,  -72, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   9),
+    Motor(AP_MOTORS_MOT_10,   0, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 10)
+};
+
 static Motor tri_motors[] =
 {
     Motor(AP_MOTORS_MOT_1,   60, AP_MOTORS_MATRIX_YAW_FACTOR_CCW, 1),
@@ -303,6 +317,7 @@ static Frame supported_frames[] =
     Frame("octa",      8, octa_motors),
     Frame("deca",     10, deca_motors),
     Frame("deca-cwx", 10, deca_cw_x_motors),
+    Frame("deca-penta",10, deca_penta_motors),
     Frame("dodeca-hexa", 12, dodeca_hexa_motors),
     Frame("tri",       3, tri_motors),
     Frame("tilttrivec",3, tilttri_vectored_motors),
