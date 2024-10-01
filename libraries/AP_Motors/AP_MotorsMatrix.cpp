@@ -1201,16 +1201,16 @@ bool AP_MotorsMatrix::setup_deca_matrix(motor_frame_type frame_type)
     case MOTOR_FRAME_TYPE_PLUS: {
         _frame_type_string = "PLUS";
         static const AP_MotorsMatrix::MotorDef motors[] {
-            {    0, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   1 },
-            {   36, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    2 },
-            {   72, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   3 },
-            {  108, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    4 },
-            {  144, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   5 },
-            {  180, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    6 },
-            { -144, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   7 },
-            { -108, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    8 },
-            {  -72, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   9 },
-            {  -36, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   10 },
+            {    0, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   1 }, // front top motor
+            {    0, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    6 }, // front bottom motor
+            {  -72, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   2 }, // front-left top motor
+            {  -72, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    7 }, // front-left bottom motor
+            { -144, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   3 }, // back-left top motor
+            { -144, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    8 }, // back-left bottom motor
+            {  144, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   4 }, // back-right top motor
+            {  144, AP_MOTORS_MATRIX_YAW_FACTOR_CW,    9 }, // back-right bottom motor
+            {   72, AP_MOTORS_MATRIX_YAW_FACTOR_CCW,   5 }, // front-right top motor            
+            {   72, AP_MOTORS_MATRIX_YAW_FACTOR_CW,   10 }, // front-right bottom motor
         };
         add_motors(motors, ARRAY_SIZE(motors));
         break;
